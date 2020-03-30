@@ -102,6 +102,10 @@
   text-transform: uppercase;
 }
 
+.nav__item:nth-child(8)::after {
+  display: none;
+}
+
 .nav__item::after {
   content: "";
   width: 1px;
