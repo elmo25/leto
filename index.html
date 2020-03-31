@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700,700i,900,900i&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Leto</title>
   </head>
@@ -30,7 +31,7 @@
           <div class="contacts header__contacts">
             <div class="contacts__info">
               <div class="info__text">Звоните круглосуточно!</div>
-              <div class="info__phone">+7 (495) 266 02 78</div>
+              <a href="+74952660278" class="info__phone">+7 (495) 266 02 78</a>
             </div>
             <button class="btn contacts__btn btn--primary">
               Перезвоните мне
@@ -40,23 +41,74 @@
         <!--header__content-->
         <!--container-->
     </header>
-    <section class="menu">
-      <div class="container">
-        <div class="menu__content">
-          <div class="menu__nav nav">
-            <a href="#" class="nav__item">Клубы</a>
-            <a href="#" class="nav__item">Услуги</a>
-            <a href="#" class="nav__item">Клубные карты</a>
-            <a href="#" class="nav__item">Расписания</a>
-            <a href="#" class="nav__item">Наши тренеры</a>
-            <a href="#" class="nav__item">Галерея</a>
-            <a href="#" class="nav__item">Наши акции</a>
-            <a href="#" class="nav__item">Контакты</a>
+    
+    <main>
+      <section class="menu">
+        <div class="container">
+          <div class="menu__content">
+            <div class="menu__nav nav">
+              <a href="#" class="nav__item">Клубы</a>
+              <a href="#" class="nav__item">Услуги</a>
+              <a href="#" class="nav__item">Клубные карты</a>
+              <a href="#" class="nav__item">Расписания</a>
+              <a href="#" class="nav__item">Наши тренеры</a>
+              <a href="#" class="nav__item">Галерея</a>
+              <a href="#" class="nav__item">Наши акции</a>
+              <a href="#" class="nav__item">Контакты</a>
+            </div>
           </div>
         </div>
         </div>
-      </div>
-      <!--container-->
-    </section>
+        <!--container-->
+      </section>
+      <section class="hero">
+        
+          <div class="swiper-container hero__swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper hero__swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hero__swiper-slide">
+                <div class="row">
+                  <div class="col-50 col-50__left">
+                    <img src="image/left-pic.png" alt="" class="left__image">
+                    <h2 class="left__subtitle">
+                      2 круглосуточные
+                    </h2>
+                    <h1 class="left__title">клубные&nbsp;карты</h1>
+                    <span class="left__price">за 22 000₽</span>
+                    <div class="left__text">
+                      <span class="text__date">
+                        Только до 31 августа!<br>
+                        Закажите карту по телефону:
+                      </span>
+                      <a href="*74952660248" class="text__phone">+7 (495) 266-02-48</a>
+                    </div>
+                  </div>
+                  <div class="col-50 col-50__right right">
+                    <img src="image/right-pic.png" class="right__image" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide hero__swiper-slide">Slide 2</div>
+              <div class="swiper-slide hero__swiper-slide">Slide 3</div>
+              <div class="swiper-slide hero__swiper-slide">Slide 2</div>
+              <div class="swiper-slide hero__swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination hero__swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+          
+          </div>
+        
+          
+        
+        <!-- /.container -->
+      </section>
+    </main>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

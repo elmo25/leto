@@ -1,0 +1,87 @@
+.hero
+  position: relative
+  background: url(../image/hero__bg.png) no-repeat center / cover
+  &__swiper-slide
+    padding-bottom: rem
+    background: url("../image/slide-bg.png") no-repeat center / cover
+.row
+  display: flex
+  align-items: center
+  justify-content: space-around
+.col-50
+  max-width: 50%
+.col-50
+  max-width: 50%
+  &__left
+    margin-top: 4rem
+    margin-right: -3rem
+    margin-left: auto
+.right
+  &__image
+    max-width: 100%
+.left
+  &__image
+    position: absolute
+    margin-top: -2rem
+    margin-left: 5rem
+  &__subtitle
+    margin: 0
+    margin-left: 3rem
+    color: $white
+    font-size: 3.42rem
+    font-weight: normal
+    text-transform: uppercase
+  &__title
+    margin: 0
+    margin-left: 3rem
+    color: $ye
+    font-size: 5.1rem
+    font-weight: normal
+    text-transform: uppercase
+    line-height: 4rem
+  &__price
+    font-family: "Roboto - Regular"
+    color: $white
+    margin-left: 3rem
+    font-size: 3.42rem
+    font-weight: 400
+    text-transform: uppercase
+  &__text
+    display: flex
+    flex-direction: column
+    margin-top: 2.125rem
+    margin-left: 3rem
+.text
+  &__date
+    display: block
+    min-width: 27.07rem
+    margin-top: 0
+    color: #ffffff
+    font-size: 1.714rem
+    font-weight: 300
+    line-height: 2rem
+    text-transform: uppercase
+    font-family: "Roboto Light"
+  &__phone
+    font-family: "Roboto Medium"
+    font-weight: 500
+    font-size: 1.714rem
+    color: $white
+    text-decoration: none
+
+.swiper-pagination-bullet 
+  background: #ffffff
+  opacity: 1
+  height: 4px
+  width: 22px
+  border-radius: 2px
+  margin-left: 1rem
+
+.swiper-pagination-bullet-active 
+  background-color: #ffd11a
+  outline: none
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction 
+  bottom: 50px
+
