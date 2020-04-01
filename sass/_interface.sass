@@ -1,5 +1,6 @@
 .btn
   &--outline
+    cursor: pointer
     display: flex
     align-items: center
     position: relative
@@ -13,9 +14,10 @@
     text-transform: uppercase
     color: $ye
   &--primary
+    cursor: pointer
     background-color: $ye
     border: none
-    padding: 18px 23px
+    padding: 0.714rem 1.642rem
     border-radius: 40px
     color: $purp
     font-family: Roboto
@@ -33,7 +35,6 @@
     flex-direction: column
     text-align: center
     margin-bottom: 3.857rem
-    
     font-size: 28px
     font-weight: 400
     line-height: 23px
@@ -45,3 +46,7 @@
       height: 2px
       background-color: $ye
       margin-top: 21px
+    &--dark
+      color: $white
+      &::after
+        display: none
