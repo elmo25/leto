@@ -1,3 +1,35 @@
+@media screen and ( max-width: 1200px  )
+  .booked
+    display: none
+  .contacts
+    &__info
+      display: none
+    
+  .left
+    margin-bottom: 1rem
+    &__image
+      display: none
+    &__subtitle
+      font-size: 2.42rem
+    &__title
+      font-size: 3.1rem
+  .clubs
+    &__col-50
+      max-width: 100%
+@media screen and ( max-width: 992px )
+  .row
+    align-items: center
+    flex-direction: column
+  .col-50
+    width: 100%
+  .clubs
+    &__col-50
+      margin-bottom: 1rem
+  .card
+    width: 100%
+  .address
+    &__image
+      display: none
 @media screen and ( max-width: 768px )
   .row
     flex-direction: column
@@ -20,6 +52,7 @@
     &__left
       text-align: center
       margin: 0
+      padding: 0
   .left
     margin-bottom: 1rem
     &__image
@@ -33,11 +66,21 @@
       font-size: 2rem
     &__price
       font-size: 3rem
-      
+  .clubs
+    &__col-50
+      max-width: 100%
+      border: none
+  .card
+    width: 100%
+    &__image
+      width: 100%
   @media screen and ( max-width: 520px )
-    .left
-      &__title
-        font-size: 1.2rem
-      &__price
-        font-size: 1.2rem
-
+  .left
+    &__title
+      font-size: 1.2rem
+    &__price
+      font-size: 1.2rem
+  .card
+    width: 100%
+    &__image
+      max-width: 100%
