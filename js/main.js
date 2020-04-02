@@ -62,4 +62,18 @@ $(document).ready(function() {
       }
     }
   });
+  var swiper = new Swiper(".gallery__swiper-container", {
+    loop: true,
+    cssMode: true,
+    navigation: {
+      nextEl: ".gallery__swiper-button-next",
+      prevEl: ".gallery__swiper-button-prev"
+    },
+    pagination: {
+      el: ".gallery__swiper-pagination",
+      clickable: true
+    },
+    mousewheel: true,
+    keyboard: true
+  });
 });

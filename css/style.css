@@ -342,6 +342,43 @@
     font-size: 12px;
     line-height: 1.285rem; }
 
+.gallery {
+  position: relative;
+  background: url(../image/gallery-bg.png) no-repeat center;
+  background-size: contain;
+  width: 100%; }
+  .gallery__swiper-slide {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .gallery__image {
+    max-width: 100%;
+    margin-bottom: 7rem; }
+  .gallery__swiper-pagination {
+    margin-bottom: 7rem; }
+  .gallery__swiper-button-next {
+    cursor: pointer;
+    background: url(../image/right__slide.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 100;
+    right: 9rem;
+    bottom: 17rem; }
+  .gallery__swiper-button-prev {
+    cursor: pointer;
+    background: url(../image/left__slide.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 100;
+    left: 9rem;
+    bottom: 17rem; }
+
 .container {
   width: 85%;
   max-width: 1140px;

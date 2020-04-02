@@ -1,0 +1,32 @@
+.gallery
+  position: relative
+  background: url(../image/gallery-bg.png) no-repeat center
+  background-size: contain
+  width: 100%
+  &__swiper-slide
+    position: relative
+    display: flex
+    justify-content: center
+  &__image
+    max-width: 100%
+    margin-bottom: 7rem
+  &__swiper-pagination
+    margin-bottom: 7rem
+  &__swiper-button-next
+    cursor: pointer
+    background: url(../image/right__slide.png) no-repeat center
+    width: 40px
+    height: 40px
+    position: absolute
+    z-index: 100
+    right: 9rem
+    bottom: 17rem
+  &__swiper-button-prev
+    cursor: pointer
+    background: url(../image/left__slide.png) no-repeat center
+    width: 40px
+    height: 40px
+    position: absolute
+    z-index: 100
+    left: 9rem
+    bottom: 17rem
