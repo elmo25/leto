@@ -342,140 +342,6 @@
     font-size: 12px;
     line-height: 1.285rem; }
 
-@media screen and (max-width: 1200px) {
-  .booked {
-    display: none; }
-  .contacts__info {
-    display: none; }
-  .left {
-    margin-bottom: 1rem; }
-    .left__image {
-      display: none; }
-    .left__subtitle {
-      font-size: 2.42rem; }
-    .left__title {
-      font-size: 3.1rem; }
-  .right__image {
-    bottom: 0; }
-  .clubs__col-50 {
-    max-width: 100%; } }
-
-@media screen and (max-width: 992px) {
-  .col-50__left {
-    text-align: center;
-    margin: 0 auto; }
-  .text__date {
-    display: none; }
-  .left__image {
-    display: none; }
-  .left__subtitle {
-    margin-top: 5rem;
-    font-size: 1.42rem; }
-  .left__title {
-    font-size: 2.1rem; }
-  .row {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .col-50 {
-    width: 100%; }
-  .clubs__col-50 {
-    margin-bottom: 1rem; }
-  .card {
-    width: 100%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0; }
-  .address__image {
-    display: none; }
-  .form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .form__input {
-      margin-bottom: 1rem; }
-  .header__btn {
-    display: none; } }
-
-@media screen and (max-width: 768px) {
-  .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .col-50 {
-    width: 100%; }
-  .header__content {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .booked {
-    display: none; }
-  .contacts__info {
-    display: none; }
-  .logo {
-    margin: 0;
-    margin-right: 1rem; }
-  .btn {
-    margin-right: 1rem; }
-  .col-50__left {
-    text-align: center;
-    margin: 0;
-    padding: 0; }
-  .left {
-    margin-bottom: 1rem; }
-    .left__image {
-      display: none; }
-    .left__text {
-      display: none; }
-    .left__subtitle {
-      margin-top: 1rem;
-      font-size: 1rem; }
-    .left__title {
-      font-size: 2rem; }
-    .left__price {
-      font-size: 3rem; }
-  .clubs__col-50 {
-    max-width: 100%;
-    margin-left: 2rem; }
-  .card {
-    width: 100%; }
-    .card__image {
-      width: 100%; } }
-
-@media screen and (max-width: 520px) {
-  .clubs__col-50 {
-    text-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .col-50__left {
-    margin: 0 auto; }
-  .left__title {
-    font-size: 1.2rem; }
-  .left__price {
-    font-size: 1.2rem; }
-  .right__image {
-    display: none; }
-  .card {
-    width: 100%; }
-    .card__image {
-      max-width: 100%; }
-  .address__text {
-    font-size: 12px; }
-  .form__input {
-    max-width: 100%; }
-  .free__title {
-    font-size: 1rem; }
-  .policy__label {
-    font-size: 0.725rem; } }
-
 .container {
   width: 85%;
   max-width: 1140px;
@@ -861,6 +727,158 @@ template {
  */
 [hidden] {
   display: none; }
+
+@media screen and (max-width: 1200px) {
+  .booked {
+    display: none; }
+  .contacts__info {
+    display: none; }
+  .left {
+    margin-bottom: 1rem; }
+    .left__image {
+      display: none; }
+    .left__subtitle {
+      font-size: 2.42rem; }
+    .left__title {
+      font-size: 3.1rem; }
+  .right__image {
+    margin-bottom: -12rem; }
+  .clubs__col-50 {
+    max-width: 100%; } }
+
+@media screen and (max-width: 992px) {
+  .col-50__left {
+    text-align: center;
+    margin: 0 auto; }
+  .text__date {
+    display: none; }
+  .left__image {
+    display: none; }
+  .left__subtitle {
+    margin-top: 5rem;
+    font-size: 1.42rem; }
+  .left__title {
+    font-size: 2.1rem; }
+  .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .col-50 {
+    width: 100%; }
+  .clubs__col-50 {
+    margin-bottom: 1rem; }
+  .card {
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0; }
+  .address__image {
+    display: none; }
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .form__input {
+      margin-bottom: 1rem; }
+  .header__btn {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .col-50 {
+    width: 100%; }
+  .header__content {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .booked {
+    display: none; }
+  .contacts__info {
+    display: none; }
+  .logo {
+    margin: 0;
+    margin-right: 1rem; }
+  .btn {
+    margin-right: 1rem; }
+  .col-50__left {
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+  .left {
+    margin-bottom: 1rem; }
+    .left__image {
+      display: none; }
+    .left__text {
+      display: none; }
+    .left__subtitle {
+      margin-top: 1rem;
+      font-size: 1rem; }
+    .left__title {
+      font-size: 2rem; }
+    .left__price {
+      font-size: 3rem; }
+  .clubs__col-50 {
+    max-width: 100%;
+    margin-left: 2rem; }
+  .card {
+    width: 100%; }
+    .card__image {
+      width: 100%; } }
+
+@media screen and (max-width: 520px) {
+  .clubs__col-50 {
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .col-50__left {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center; }
+  .left__subtitle {
+    margin: 0; }
+  .left__title {
+    font-size: 1.2rem;
+    margin: 0; }
+  .left__price {
+    font-size: 1.2rem;
+    margin: 0; }
+  .btn--primary {
+    padding: 0.714rem 0.642rem; }
+  .right__image {
+    display: none; }
+  .card {
+    width: 100%; }
+    .card__image {
+      max-width: 100%; }
+  .address__text {
+    font-size: 12px; }
+  .form__input {
+    max-width: 100%; }
+  .section__title {
+    font-size: 1.5rem;
+    line-height: 2.25rem; }
+  .policy__label {
+    font-size: 0.725rem; }
+  .hero__swiper-pagination {
+    display: none; }
+  .menu {
+    display: none; }
+  .services {
+    text-align: center; }
+  .discription {
+    margin-top: 1rem;
+    margin-left: 4rem; } }
 
 * {
   margin: 0;
