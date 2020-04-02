@@ -13,10 +13,28 @@
       font-size: 2.42rem
     &__title
       font-size: 3.1rem
+  .right
+    &__image
+      bottom: 0
   .clubs
     &__col-50
       max-width: 100%
 @media screen and ( max-width: 992px )
+  .col-50
+    &__left
+      text-align: center
+      margin: 0 auto
+  .text
+    &__date
+      display: none
+  .left
+    &__image
+      display: none
+    &__subtitle
+      margin-top: 5rem
+      font-size: 1.42rem
+    &__title
+      font-size: 2.1rem
   .row
     align-items: center
     flex-direction: column
@@ -25,8 +43,12 @@
   .clubs
     &__col-50
       margin-bottom: 1rem
+
   .card
     width: 100%
+    align-items: center
+    margin: 0
+    
   .address
     &__image
       display: none
@@ -73,18 +95,42 @@
   .clubs
     &__col-50
       max-width: 100%
-      border: none
+      margin-left: 2rem
   .card
+    
     width: 100%
     &__image
       width: 100%
 @media screen and ( max-width: 520px )
+  .clubs
+    &__col-50
+      text-align: center
+      align-items: center
+  .col-50
+    &__left
+      margin: 0 auto
   .left
+    
     &__title
       font-size: 1.2rem
     &__price
       font-size: 1.2rem
+  .right
+    &__image
+      display: none
   .card
     width: 100%
     &__image
       max-width: 100%
+  .address
+    &__text
+      font-size: 12px
+  .form
+    &__input
+      max-width: 100%
+  .free
+    &__title
+      font-size: 1rem
+  .policy
+    &__label
+      font-size: 0.725rem
