@@ -399,7 +399,9 @@
     -ms-flex-direction: column;
     flex-direction: column; }
     .form__input {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  .header__btn {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   .row {
