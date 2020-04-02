@@ -307,6 +307,38 @@
     margin-right: 6px;
     border: none; }
 
+.swiper-button-prev-2 {
+  cursor: pointer;
+  background: url(../image/left__slide.png) no-repeat center;
+  width: 40px;
+  height: 40px;
+  top: 21%;
+  position: absolute;
+  z-index: 100;
+  left: 0; }
+
+.swiper-button-next-2 {
+  cursor: pointer;
+  background: url(../image/right__slide.png) no-repeat center;
+  width: 40px;
+  height: 40px;
+  top: 21%;
+  position: absolute;
+  z-index: 100;
+  right: 0; }
+
+.discription {
+  text-align: center;
+  max-width: 188px; }
+  .discription__subtitle {
+    font-weight: bold;
+    margin-top: 0.2rem;
+    font-size: 1rem; }
+  .discription__text {
+    margin-top: 0.2rem;
+    font-size: 12px;
+    line-height: 1.285rem; }
+
 @media screen and (max-width: 1200px) {
   .booked {
     display: none; }

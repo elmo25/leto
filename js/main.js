@@ -32,21 +32,33 @@ $(document).ready(function() {
       clickable: true
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".swiper-button-next-2",
+      prevEl: ".swiper-button-prev-2"
     },
     breakpoints: {
-      640: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      440: {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      768: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      995: {
         slidesPerView: 4,
-        spaceBetween: 40
+        spaceBetween: 20
       },
       1024: {
         slidesPerView: 5,
-        spaceBetween: 50
+        spaceBetween: 20
+      },
+      1240: {
+        slidesPerView: 5,
+        spaceBetween: 20
       }
     }
   });
