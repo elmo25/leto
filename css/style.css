@@ -383,6 +383,7 @@
   margin-left: 92px; }
 
 .cards__form {
+  margin-top: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,7 +393,7 @@
   flex-direction: column; }
 
 .cards__input {
-  width: 100%;
+  width: 498px;
   margin-bottom: 12px;
   border: 1px solid #b7b7b7; }
   .cards__input::-webkit-input-placeholder {
@@ -435,6 +436,31 @@
   font-weight: 300;
   line-height: 22.04px;
   text-transform: uppercase; }
+
+.cards__time {
+  margin-bottom: 27px; }
+
+.time__label {
+  text-align: center;
+  cursor: pointer;
+  padding: 15px 24px;
+  border: 1px solid #b7b7b7;
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22.04px;
+  text-transform: uppercase;
+  color: #1e1c34;
+  opacity: 0.6; }
+  .time__label:hover {
+    background-color: #ffd11a;
+    opacity: 1; }
+
+.time__input {
+  display: none; }
+
+.club {
+  margin-bottom: 26px; }
 
 .container {
   width: 85%;
