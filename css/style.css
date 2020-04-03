@@ -765,10 +765,18 @@ template {
 [hidden] {
   display: none; }
 
+@media screen and (max-width: 1368px) {
+  .right__image {
+    margin-bottom: -12rem; } }
+
 @media screen and (max-width: 1200px) {
   .booked {
     display: none; }
   .contacts__info {
+    display: none; }
+  .gallery__swiper-button-next {
+    display: none; }
+  .gallery__swiper-button-prev {
     display: none; }
   .left {
     margin-bottom: 1rem; }
@@ -870,7 +878,9 @@ template {
   .card {
     width: 100%; }
     .card__image {
-      width: 100%; } }
+      width: 100%; }
+  .gallery {
+    display: none; } }
 
 @media screen and (max-width: 520px) {
   .clubs__col-50 {
