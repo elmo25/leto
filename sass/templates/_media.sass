@@ -55,6 +55,8 @@
     &__left
       text-align: center
       margin: 0 auto
+    &__right
+      display: none
   .text
     &__date
       display: none
@@ -89,6 +91,9 @@
       margin-bottom: 1rem
   .header
     &__btn
+      display: none
+  .footer
+    &__list
       display: none
 @media screen and ( max-width: 768px )
   .row
@@ -137,6 +142,20 @@
       width: 100%
   .gallery
     display: none
+  .footer
+    &__wrap
+      flex-direction: column
+      align-items: center
+    &__contacts
+    &__logo
+      margin-bottom: 1rem
+    &__info
+      margin: 0
+  .clubs
+    &__tag
+      text-align: center
+  .hero__swiper-pagination
+    display: none
 @media screen and ( max-width: 520px )
   .hero
   .clubs
@@ -184,8 +203,6 @@
   .policy
     &__label
       font-size: 0.725rem
-  .hero__swiper-pagination
-    
   .menu
     display: none
   .services
