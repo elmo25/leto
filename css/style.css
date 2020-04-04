@@ -84,6 +84,11 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase; }
+  .nav__item:hover {
+    color: #ffd11a;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
   .nav__item:nth-child(8)::after {
     display: none; }
   .nav__item::after {
@@ -680,6 +685,16 @@ img {
 a {
   text-decoration: none; }
 
+.menutoggle {
+  cursor: pointer;
+  max-width: 6rem;
+  top: 0;
+  left: 0;
+  display: none; }
+
+.contacts__btn {
+  padding: 15px 24px; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1161,7 +1176,24 @@ template {
   .label__title {
     font-size: 1rem; }
   .label__text {
-    font-size: 0.7rem; } }
+    font-size: 0.7rem; }
+  .menu__nav {
+    display: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .nav__item::after {
+    display: none; }
+  .nav-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .menutoggle {
+    display: block; } }
 
 @media screen and (max-width: 520px) {
   .clubs__col-50 {
@@ -1201,8 +1233,6 @@ template {
     line-height: 2.25rem; }
   .policy__label {
     font-size: 0.725rem; }
-  .menu {
-    display: none; }
   .services {
     text-align: center; }
   .discription {

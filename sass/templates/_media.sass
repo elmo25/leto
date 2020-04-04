@@ -175,6 +175,20 @@
       font-size: 1rem
     &__text
       font-size: 0.7rem
+  .menu
+    &__nav
+      display: none
+      transition: 0.3s
+  .nav
+    &__item
+      &::after
+        display: none
+  .nav-active
+    display: flex
+    flex-direction: column
+    
+  .menutoggle
+    display: block
 @media screen and ( max-width: 520px )
   .hero
   .clubs
@@ -222,8 +236,7 @@
   .policy
     &__label
       font-size: 0.725rem
-  .menu
-    display: none
+  
   .services
     text-align: center
   .discription

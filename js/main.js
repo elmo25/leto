@@ -1,4 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  const nav = $(".nav");
+  const menu = $(".menutoggle");
+
+  menu.on("click", function () {
+    nav.toggleClass("nav-active");
+  });
   var mySwiper = new Swiper(".hero__swiper-container", {
     // Optional parameters
     direction: "horizontal",
@@ -7,19 +13,19 @@ $(document).ready(function() {
     // If we need pagination
     pagination: {
       el: ".hero__swiper-pagination",
-      clickable: true
+      clickable: true,
     },
 
     // Navigation arrows
     navigation: {
       nextEl: ".hero__swiper-button-next",
-      prevEl: ".hero__swiper-button-prev"
+      prevEl: ".hero__swiper-button-prev",
     },
 
     // And if we need scrollbar
     scrollbar: {
-      el: ".swiper-scrollbar"
-    }
+      el: ".swiper-scrollbar",
+    },
   });
   var swiper = new Swiper(".services__swiper-container", {
     direction: "horizontal",
@@ -29,51 +35,51 @@ $(document).ready(function() {
     // init: false,
     pagination: {
       el: ".services__swiper-pagination",
-      clickable: true
+      clickable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next-2",
-      prevEl: ".swiper-button-prev-2"
+      prevEl: ".swiper-button-prev-2",
     },
     breakpoints: {
       0: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       440: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       640: {
         slidesPerView: 3,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       995: {
         slidesPerView: 4,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       1024: {
         slidesPerView: 5,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       1240: {
         slidesPerView: 5,
-        spaceBetween: 20
-      }
-    }
+        spaceBetween: 20,
+      },
+    },
   });
   var swiper = new Swiper(".gallery__swiper-container", {
     loop: true,
     cssMode: true,
     navigation: {
       nextEl: ".gallery__swiper-button-next",
-      prevEl: ".gallery__swiper-button-prev"
+      prevEl: ".gallery__swiper-button-prev",
     },
     pagination: {
       el: ".gallery__swiper-pagination",
-      clickable: true
+      clickable: true,
     },
     mousewheel: true,
-    keyboard: true
+    keyboard: true,
   });
 });
