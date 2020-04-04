@@ -27,6 +27,29 @@
   .clubs
     &__col-50
       max-width: 100%
+  .cards
+    &__left
+      display: none
+    &__label
+      margin-right: 2rem
+      line-height: 10px
+      font-size: 9px
+    &__col-50
+      margin: auto
+    &__btn
+      &--primary
+        margin: 0 auto
+        margin-left: 1rem
+        margin-top: 1rem
+    &__time
+      flex-direction: column
+  .time
+    &__label
+      margin-bottom: 1rem
+  .club
+    margin: 0
+  .label
+    margin-bottom: 1rem
 @media screen and ( max-width: 992px )
   .col-50
     &__left
@@ -115,24 +138,29 @@
   .gallery
     display: none
 @media screen and ( max-width: 520px )
+  .hero
   .clubs
     &__col-50
       text-align: center
       align-items: center
   .col-50
     &__left
-      padding-top: 1rem
-      padding-bottom: 1rem
+      padding-top: 5rem
+      padding-bottom: 5rem
       text-align: center
   .left
+    
     &__subtitle
       margin: 0
+      margin-bottom: 1rem
     &__title
-      font-size: 1.2rem
+      font-size: 1.5rem
       margin: 0
+      margin-bottom: 1rem
     &__price
       font-size: 1.2rem
       margin: 0
+      margin-bottom: 1rem
   .btn
     &--primary
       padding: 0.714rem 0.642rem
@@ -157,7 +185,7 @@
     &__label
       font-size: 0.725rem
   .hero__swiper-pagination
-    display: none
+    
   .menu
     display: none
   .services

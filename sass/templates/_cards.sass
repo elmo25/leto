@@ -6,18 +6,15 @@
     display: flex
     flex-direction: column
   &__input
-    
     width: 498px
     margin-bottom: 12px
     border: 1px solid #b7b7b7
     &::placeholder
       font-size: 1rem
       line-height: 24px
-  &__btn
-    &--primary
-      justify-content: flex-end
   &__policy
-    margin-top: 12px
+    margin-left: 25px
+    
     display: flex
     flex-basis: 100%
     &__checkbox
@@ -31,14 +28,20 @@
     font-weight: 300
     line-height: 22.04px
     text-transform: uppercase
+    
   &__time
-    margin-bottom: 27px
-   
+    margin-bottom: 5px
+  &__btn
+    &--primary
+      margin-top: 1rem
+      margin-left: 19rem
 .time
+  display: flex
+  justify-content: space-between
+  padding-bottom: 1.3rem
   &__label
     text-align: center
     cursor: pointer
-    padding: 15px 24px
     border: 1px solid #b7b7b7
     border-radius: 40px
     font-size: 12px
@@ -47,10 +50,43 @@
     text-transform: uppercase
     color: #1e1c34
     opacity: 0.6
+  &__first
+    padding: 15px 30px
+    &:hover
+      background-color: $ye
+      opacity: 1
+  &__second
+    padding: 15px 24px
+    &:hover
+      background-color: $ye
+      opacity: 1
+  &__third
+    padding: 15px 26px
+    &:hover
+      background-color: $ye
+      opacity: 1
+  &__fourth
+    padding: 15px 24px
     &:hover
       background-color: $ye
       opacity: 1
   &__input
     display: none
 .club
-  margin-bottom: 26px
+  margin-bottom: 22px
+  display: flex
+  &__label
+    margin-left: 12px
+  &__input
+.label
+  font-size: 16px
+  font-weight: 300
+  line-height: 22px
+  &__title
+    display: block
+    font-weight: 500
+  &__text
+   
+.items
+  &__image
+    margin-top: -40px

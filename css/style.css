@@ -12,7 +12,7 @@
     align-items: center;
     padding: 20px 0; }
   .header__logo {
-    margin-right: 153px; }
+    margin-right: 93px; }
 
 .booked {
   display: -webkit-box;
@@ -133,8 +133,9 @@
 .left__subtitle {
   margin: 0;
   margin-left: 3rem;
+  margin-bottom: 1.5rem;
   color: #ffffff;
-  font-size: 3.42rem;
+  font-size: 3rem;
   font-weight: normal;
   text-transform: uppercase; }
 
@@ -142,16 +143,17 @@
   margin: 0;
   margin-left: 3rem;
   color: #ffd11a;
-  font-size: 5.1rem;
-  font-weight: normal;
+  font-size: 5.1428rem;
+  font-weight: 300;
   text-transform: uppercase;
-  line-height: 4rem; }
+  line-height: 18px;
+  margin-bottom: 2rem; }
 
 .left__price {
   font-family: "Roboto - Regular";
   color: #ffffff;
   margin-left: 3rem;
-  font-size: 3.42rem;
+  font-size: 3.4285rem;
   font-weight: 400;
   text-transform: uppercase; }
 
@@ -276,7 +278,7 @@
     margin-top: 27px; }
 
 .policy__label {
-  font-size: 1rem;
+  font-size: 11px;
   font-weight: 400;
   line-height: 22.04px;
   text-transform: uppercase;
@@ -359,7 +361,7 @@
     max-width: 100%;
     margin-bottom: 7rem; }
   .gallery__swiper-pagination {
-    margin-bottom: 7rem; }
+    margin-bottom: 6rem; }
   .gallery__swiper-button-next {
     cursor: pointer;
     background: url(../image/right__slide.png) no-repeat center;
@@ -368,7 +370,7 @@
     position: absolute;
     z-index: 100;
     right: 9rem;
-    bottom: 17rem; }
+    bottom: 18rem; }
   .gallery__swiper-button-prev {
     cursor: pointer;
     background: url(../image/left__slide.png) no-repeat center;
@@ -376,8 +378,8 @@
     height: 40px;
     position: absolute;
     z-index: 100;
-    left: 9rem;
-    bottom: 17rem; }
+    left: 8.5rem;
+    bottom: 18rem; }
 
 .cards__col-50 {
   margin-left: 92px; }
@@ -412,13 +414,8 @@
     font-size: 1rem;
     line-height: 24px; }
 
-.cards__btn--primary {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
-
 .cards__policy {
-  margin-top: 12px;
+  margin-left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,29 +435,72 @@
   text-transform: uppercase; }
 
 .cards__time {
-  margin-bottom: 27px; }
+  margin-bottom: 5px; }
 
-.time__label {
-  text-align: center;
-  cursor: pointer;
-  padding: 15px 24px;
-  border: 1px solid #b7b7b7;
-  border-radius: 40px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 22.04px;
-  text-transform: uppercase;
-  color: #1e1c34;
-  opacity: 0.6; }
-  .time__label:hover {
-    background-color: #ffd11a;
-    opacity: 1; }
+.cards__btn--primary {
+  margin-top: 1rem;
+  margin-left: 19rem; }
 
-.time__input {
-  display: none; }
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 1.3rem; }
+  .time__label {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #b7b7b7;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22.04px;
+    text-transform: uppercase;
+    color: #1e1c34;
+    opacity: 0.6; }
+  .time__first {
+    padding: 15px 30px; }
+    .time__first:hover {
+      background-color: #ffd11a;
+      opacity: 1; }
+  .time__second {
+    padding: 15px 24px; }
+    .time__second:hover {
+      background-color: #ffd11a;
+      opacity: 1; }
+  .time__third {
+    padding: 15px 26px; }
+    .time__third:hover {
+      background-color: #ffd11a;
+      opacity: 1; }
+  .time__fourth {
+    padding: 15px 24px; }
+    .time__fourth:hover {
+      background-color: #ffd11a;
+      opacity: 1; }
+  .time__input {
+    display: none; }
 
 .club {
-  margin-bottom: 26px; }
+  margin-bottom: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .club__label {
+    margin-left: 12px; }
+
+.label {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px; }
+  .label__title {
+    display: block;
+    font-weight: 500; }
+
+.items__image {
+  margin-top: -40px; }
 
 .container {
   width: 85%;
@@ -468,15 +508,16 @@
   margin: 0 auto; }
 
 .btn--outline {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  padding: 1.285rem 2.14rem 1.285rem 2.14rem;
+  padding: 13px 34px 13px 34px;
   background-color: transparent;
   border: 1px solid #ffd11a;
   border-radius: 40px;
@@ -485,6 +526,12 @@
   line-height: 22.04px;
   text-transform: uppercase;
   color: #ffd11a; }
+  .btn--outline::before {
+    content: "";
+    background: url(../image/arrow.svg) no-repeat center;
+    width: 15px;
+    height: 6px;
+    margin-right: 12px; }
 
 .btn--primary {
   cursor: pointer;
@@ -872,7 +919,30 @@ template {
   .right__image {
     margin-bottom: -12rem; }
   .clubs__col-50 {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .cards__left {
+    display: none; }
+  .cards__label {
+    margin-right: 2rem;
+    line-height: 10px;
+    font-size: 9px; }
+  .cards__col-50 {
+    margin: auto; }
+  .cards__btn--primary {
+    margin: 0 auto;
+    margin-left: 1rem;
+    margin-top: 1rem; }
+  .cards__time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .time__label {
+    margin-bottom: 1rem; }
+  .club {
+    margin: 0; }
+  .label {
+    margin-bottom: 1rem; } }
 
 @media screen and (max-width: 992px) {
   .col-50__left {
@@ -972,17 +1042,20 @@ template {
     -ms-flex-align: center;
     align-items: center; }
   .col-50__left {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center; }
   .left__subtitle {
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 1rem; }
   .left__title {
-    font-size: 1.2rem;
-    margin: 0; }
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem; }
   .left__price {
     font-size: 1.2rem;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 1rem; }
   .btn--primary {
     padding: 0.714rem 0.642rem; }
   .right__image {
@@ -1000,8 +1073,6 @@ template {
     line-height: 2.25rem; }
   .policy__label {
     font-size: 0.725rem; }
-  .hero__swiper-pagination {
-    display: none; }
   .menu {
     display: none; }
   .services {

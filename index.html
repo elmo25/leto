@@ -19,7 +19,6 @@
             <img src="image/logo.png" alt="лого" />
           </div>
           <button class="header__btn btn--outline">
-            <img class="btn__img" src="image/arrow.svg" alt="" />
             <span class="btn__text">Выбрать клуб</span>
           </button>
           <div class="header__booked booked">
@@ -310,53 +309,51 @@
         <div class="container">
             <h2 class="section__title">Клубные карты</h2>
             <div class="row">
-              <div class="col-50">
+              <div class="col-50 cards__left">
                 <div class="items">
                   <img src="image/cards.png" alt="" class="items__image">
                   
                 </div>
               </div>
               <div class="col-50 cards__col-50 ">
-               <div class="time cards__time">
-                        <input id="first" class="time__input" type="radio" name="card-type" value="1">
-                        <label for="fist" class="time__label">1 месяц</label>
-                        <input id="second" class="time__input" type="radio" name="card-type" value="6">
-                        <label for="second" class="time__label">6 месяцев</label>
-                        <input id="third" class="time__input" type="radio" name="card-type" value="9">
-                        <label for="third" class="time__label">9 месяцев</label>
-                        <input id="fourth" class="time__input" type="radio" name="card-type" value="12">
-                        <label for="fourth" class="time__label">12 месяцев</label>
-                    </div>
-                    <div class="club">
-                      <input type="checkbox" class="club__input" id="card_leto_mozaika" name="club-name" value="mozaika" checked>
-                      <label for="card_leto_mozaika" class="club__label">
-                        <h5>Тело «Мозаика»</h5>
-                        <p>Россия, Москва, 7-я Кожуховская ул., 9</p>
-                      </label>
-                    </div>
-                  <div class="club">
-                    <input type="checkbox" class="club__input" id="card_leto_schelkovo" name="club-name" value="schelkovo">
-                    <label for="card_leto_schelkovo" class="club__label">
-                      <h5>Тело «Щелково»</h5>
-                      <p>Россия, г. Щелково, ул. Советская, д. 16</p>
-                    </label>
-              <form action="#" class="form cards__form">
-                <input type="text" class="form__input cards__input" placeholder="Ваше имя*">
-                <input type="text" class="form__input cards__input" placeholder="Ваш номер телефона*">
-              </form>
-              <div class="policy cards__policy">
-                <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
-                  class="cards__policy__checkbox policy__checkbox" />
-                <label for="cards-policy-checkbox" class="cards__label">Я согласен на обработку персональных данных</label>
-                
-              </div>
-              <button class="btn--primary cards__btn--primary">Забронировать карту</button>
+                <div class="time cards__time">
+                  <input id="first" class="time__input time__label" type="radio" name="card-type" value="1">
+                  <label for="fist" class="time__first time__label">1 месяц</label>
+                  <input id="second" class="time__input" type="radio" name="card-type" value="6">
+                  <label for="second" class="time__second time__label">6 месяцев</label>
+                  <input id="third" class="time__input" type="radio" name="card-type" value="9">
+                  <label for="third" class="time__third time__label">9 месяцев</label>
+                  <input id="fourth" class="time__input" type="radio" name="card-type" value="12">
+                  <label for="fourth" class="time__fourth time__label">12 месяцев</label>
+                </div>
+                <div class="club">
+                  <input type="checkbox" class="club__input" id="card_leto_mozaika" name="club-name" value="mozaika" checked>
+                  <label for="card_leto_mozaika" class="club__label label">
+                    <strong class="label__title">Тело «Мозаика»</strong>
+                    <span class="label__text">Россия, Москва, 7-я Кожуховская ул., 9</span>
+                  </label>
+                </div>
+                <div class="club">
+                  <input type="checkbox" class="club__input" id="card_leto_schelkovo" name="club-name" value="schelkovo">
+                  <label for="card_leto_schelkovo" class="club__label label">
+                    <strong class="label__title">Тело «Щелково»</strong>
+                    <span class="label__text">Россия, г. Щелково, ул. Советская, д. 16</span>
+                  </label>
+                </div>
+                <form action="#" class="form cards__form">
+                  <input type="text" class="form__input cards__input" placeholder="Ваше имя*">
+                  <input type="text" class="form__input cards__input" placeholder="Ваш номер телефона*">
+                </form>
+                <div class="policy cards__policy">
+                  <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
+                    class="cards__policy__checkbox policy__checkbox" />
+                  <label for="cards-policy-checkbox" class="cards__label">Я согласен на обработку персональных данных</label>
+                </div>
+                <button class="btn--primary cards__btn--primary">Забронировать карту</button>
                  
               </div>
-              
-
             </div>
-        </div>
+          </div>
         <!-- /.container -->
       </section>
     </main>
