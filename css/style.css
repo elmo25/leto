@@ -1177,13 +1177,17 @@ template {
     font-size: 1rem; }
   .label__text {
     font-size: 0.7rem; }
-  .menu__nav {
-    display: none;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-  .nav__item::after {
-    display: none; }
+  .menu {
+    background: #1e1c34; }
+    .menu__nav {
+      display: none;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+  .nav__item {
+    color: #ffd11a; }
+    .nav__item::after {
+      display: none; }
   .nav-active {
     display: -webkit-box;
     display: -ms-flexbox;
