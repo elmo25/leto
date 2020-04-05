@@ -33,7 +33,7 @@
             </div>
           </div>
           
-          <div class="header__booked booked">
+          <div class="header__booked booked" data-toggle="booked">
             <img class="booked__img" src="image/booked-img.png" alt="" />
             <span class="booked__text "
               >Записаться на бесплатный&nbsp;визит</span
@@ -162,7 +162,7 @@
           <form action="#" class="form free__form">
             <input type="text" class="form__input" placeholder="Ваше имя...">
             <input type="text" class="form__input" placeholder="Ваш номер телефона...">
-            <button class="btn--primary free-btn" data-toggle="booked">записаться</button>
+            <button class="btn--primary free-btn" >записаться</button>
            
           </form>
           <div class="policy free__policy">
@@ -446,15 +446,18 @@
         <button class="modal-call__close"></button>
         <h2 class="modal-call__title">Обратный звонок</h2>
         <form action="#" class="form modal-call__form">
-          <input type="text" class="form__input modal-call__input" placeholder="Ваше имя*">
-          <input type="text" class="form__input modal-call__input" placeholder="Ваш номер телефона*">
+          <div class="input__group modal-call__input__group">
+            <input type="text" name="userName" class="form__input modal-call__input" placeholder="Ваше имя*">
+            <input type="text" name="userPhone" class="form__input modal-call__input" placeholder="Ваш номер телефона*">
+          </div>
+          
         </form>
         <div class="policy modal-call__policy">
           <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
             class="modal__policy__checkbox policy__checkbox" />
           <label for="modal-policy-checkbox" class="modal-call__label">Я согласен на обработку персональных данных</label>
         </div>
-        <button class="btn--primary modal-call__btn--primary"  >перезвоните мне</button>
+        <button class="btn--primary modal-call__btn--primary">перезвоните мне</button>
       </div>
     </div>
     <!-- /.modal -->
@@ -463,8 +466,11 @@
         <button class="modal-booked__close"></button>
         <h2 class="modal-booked__title">Записаться на визит</h2>
         <form action="#" class="form modal-booked__form">
-          <input type="text" class="form__input modal-booked__input" placeholder="Ваше имя*">
-          <input type="text" class="form__input modal-booked__input" placeholder="Ваш номер телефона*">
+          <div class="input__group modal-booked__input__group">
+          <input type="text" name="userName" class="form__input modal-booked__input" placeholder="Ваше имя*">
+          <input type="text" name="userPhone" class="form__input modal-booked__input" placeholder="Ваш номер телефона*">
+          </div>
+         
         </form>
         <div class="policy modal-booked__policy">
           <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
@@ -474,8 +480,10 @@
         <button class="btn--primary modal-booked__btn--primary">перезвоните мне</button>
       </div>
     </div>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

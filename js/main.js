@@ -129,4 +129,103 @@ $(document).ready(function () {
     mousewheel: true,
     keyboard: true,
   });
+  //Валидация формы
+  $(".modal-booked__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+      },
+      userPhone: {
+        required: true,
+        minlength: 11,
+      },
+      // compound rule
+
+      policyCheckbox: {
+        required: true,
+      },
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Не короче двух букв",
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр",
+      },
+
+      policyCheckbox: {
+        required: "Нужно ваше согласие",
+      },
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+          modalThx.toggleClass("modal-thanks--visible");
+        },
+        error: function (response) {
+          console.error("Ошибка запроса" + response);
+        },
+      });
+    },
+  });
+  $(".modal-call__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+      },
+      userPhone: {
+        required: true,
+        minlength: 11,
+      },
+      // compound rule
+
+      policyCheckbox: {
+        required: true,
+      },
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Не короче двух букв",
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр",
+      },
+
+      policyCheckbox: {
+        required: "Нужно ваше согласие",
+      },
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+          modalThx.toggleClass("modal-thanks--visible");
+        },
+        error: function (response) {
+          console.error("Ошибка запроса" + response);
+        },
+      });
+    },
+  });
 });
