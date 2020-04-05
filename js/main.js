@@ -1,7 +1,13 @@
 $(document).ready(function () {
   const nav = $(".nav");
   const menu = $(".menutoggle");
+  const mini = $(".minimenu");
+  const btn = $(".header__btn");
 
+  btn.on("click", function () {
+    mini.toggleClass("active");
+    btn.toggleClass("btn--primary");
+  });
   menu.on("click", function () {
     nav.toggleClass("nav-active");
   });

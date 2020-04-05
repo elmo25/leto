@@ -695,6 +695,36 @@ a {
 .contacts__btn {
   padding: 15px 24px; }
 
+.minimenu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  left: 416.5px;
+  top: 60px;
+  border: none;
+  z-index: 7000;
+  background: #ffd11a;
+  padding: 25px 5px 5px 30px;
+  border-radius: 0px 6px 6px 6px;
+  max-width: 265px; }
+
+.active {
+  opacity: 1;
+  visibility: visible; }
+
+.mini__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "Roboto - Bold";
+  color: #2e2e2e; }
+
+.mini__text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  font-family: "Roboto Light"; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
