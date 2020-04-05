@@ -607,14 +607,16 @@
   margin: 0 auto; }
 
 .btn--outline {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
   padding: 13px 34px 13px 34px;
   background-color: transparent;
@@ -695,18 +697,24 @@ a {
 .contacts__btn {
   padding: 15px 24px; }
 
+.free-btn {
+  padding: 18px 42px; }
+
 .minimenu {
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  left: 416.5px;
-  top: 60px;
+  left: 8px;
+  top: 50px;
   border: none;
   z-index: 7000;
   background: #ffd11a;
-  padding: 25px 5px 5px 30px;
-  border-radius: 0px 6px 6px 6px;
-  max-width: 265px; }
+  padding: 25px 0px 5px 30px;
+  border-radius: 0 6px 6px 6px;
+  width: 265px; }
+  .minimenu__group {
+    display: block;
+    margin-bottom: 1rem; }
 
 .active {
   opacity: 1;
@@ -720,7 +728,7 @@ a {
   color: #2e2e2e; }
 
 .mini__text {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   font-family: "Roboto Light"; }
@@ -1208,14 +1216,14 @@ template {
   .label__text {
     font-size: 0.7rem; }
   .menu {
-    background: #1e1c34; }
+    background: #ffd11a; }
     .menu__nav {
       display: none;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
   .nav__item {
-    color: #ffd11a; }
+    color: #1e1c34; }
     .nav__item::after {
       display: none; }
   .nav-active {
