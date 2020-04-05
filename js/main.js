@@ -3,6 +3,14 @@ $(document).ready(function () {
   const menu = $(".menutoggle");
   const mini = $(".minimenu");
   const btn = $(".header__btn");
+  const call = $(".modal-call");
+  const callBtn = $("[data-toggle=modal]");
+  const closeBtn = $(".modal-call__close");
+  const bookedClose = $(".modal-booked__close");
+  const dialog = $(".modal-call__dialog");
+  const booked = $(".modal-booked");
+  const bookedBtn = $("[data-toggle=booked]");
+  const bookedDialog = $(".modal-booked__dialog");
 
   btn.on("click", function () {
     mini.toggleClass("active");
@@ -10,6 +18,39 @@ $(document).ready(function () {
   });
   menu.on("click", function () {
     nav.toggleClass("nav-active");
+  });
+  callBtn.on("click", function () {
+    call.toggleClass("active");
+  });
+  closeBtn.on("click", function () {
+    call.toggleClass("active");
+  });
+  $(document).keyup(function (event) {
+    if (event.which == "27") {
+      call.removeClass("active");
+    }
+  });
+  call.on("click", function (e) {
+    if (!dialog.is(e.target) && dialog.has(e.target).length === 0) {
+      call.toggleClass("active");
+    }
+  });
+  bookedBtn.on("click", function () {
+    booked.toggleClass("active");
+  });
+  bookedClose.on("click", function () {
+    booked.toggleClass("active");
+  });
+
+  $(document).keyup(function (event) {
+    if (event.which == "27") {
+      booked.removeClass("active");
+    }
+  });
+  booked.on("click", function (e) {
+    if (!bookedDialog.is(e.target) && bookedDialog.has(e.target).length === 0) {
+      booked.toggleClass("active");
+    }
   });
   var mySwiper = new Swiper(".hero__swiper-container", {
     // Optional parameters

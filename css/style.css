@@ -601,6 +601,186 @@
   font-weight: 300;
   line-height: 18px; }
 
+.modal-booked {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 199;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(30, 28, 52, 0.5); }
+  .modal-booked--active {
+    opacity: 1;
+    visibility: visible; }
+  .modal-booked__title {
+    padding: 20px 69px;
+    background-color: #ffd11a;
+    color: #2e2e2e;
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 22.98px;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .modal-booked__input {
+    margin-bottom: 12px;
+    width: 268px; }
+  .modal-booked__label {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13.99px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 17px;
+    width: 150px; }
+  .modal-booked__close {
+    position: absolute;
+    right: -40px;
+    top: -20px;
+    width: 16px;
+    height: 15px;
+    background: transparent url(../image/close__btn.png) no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .modal-booked__btn--primary {
+    margin-top: 20px;
+    margin-bottom: 29px;
+    padding: 18px 23px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22.02px;
+    text-transform: uppercase; }
+  .modal-booked__dialog {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #1e1c34; }
+  .modal-booked__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.modal-call {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 199;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(30, 28, 52, 0.5); }
+  .modal-call--active {
+    opacity: 1;
+    visibility: visible; }
+  .modal-call__title {
+    padding: 20px 69px;
+    background-color: #ffd11a;
+    color: #2e2e2e;
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 22.98px;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .modal-call__input {
+    margin-bottom: 12px;
+    width: 268px; }
+  .modal-call__label {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13.99px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 17px;
+    width: 150px; }
+  .modal-call__close {
+    position: absolute;
+    right: -40px;
+    top: -20px;
+    width: 16px;
+    height: 15px;
+    background: transparent url(../image/close__btn.png) no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .modal-call__btn--primary {
+    margin-top: 20px;
+    margin-bottom: 29px;
+    padding: 18px 23px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22.02px;
+    text-transform: uppercase; }
+  .modal-call__dialog {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #1e1c34; }
+  .modal-call__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
 .container {
   width: 85%;
   max-width: 1140px;
