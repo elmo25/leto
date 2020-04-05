@@ -11,6 +11,8 @@ $(document).ready(function () {
   const booked = $(".modal-booked");
   const bookedBtn = $("[data-toggle=booked]");
   const bookedDialog = $(".modal-booked__dialog");
+  const modalThx = $(".modal-thanks");
+  const closeThx = $(".modal-thanks__close");
 
   btn.on("click", function () {
     mini.toggleClass("active");
@@ -41,7 +43,9 @@ $(document).ready(function () {
   bookedClose.on("click", function () {
     booked.toggleClass("active");
   });
-
+  closeThx.on("click", function () {
+    modalThx.toggleClass("active");
+  });
   $(document).keyup(function (event) {
     if (event.which == "27") {
       booked.removeClass("active");
@@ -170,8 +174,8 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          modal.removeClass("modal--visible");
-          modalThx.toggleClass("modal-thanks--visible");
+          booked.removeClass("active");
+          modalThx.toggleClass("active");
         },
         error: function (response) {
           console.error("Ошибка запроса" + response);
@@ -219,8 +223,106 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          modal.removeClass("modal--visible");
-          modalThx.toggleClass("modal-thanks--visible");
+          call.removeClass("active");
+          modalThx.toggleClass("active");
+        },
+        error: function (response) {
+          console.error("Ошибка запроса" + response);
+        },
+      });
+    },
+  });
+  $(".form__club").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+      },
+      userPhone: {
+        required: true,
+        minlength: 11,
+      },
+      // compound rule
+
+      policyCheckbox: {
+        required: true,
+      },
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Не короче двух букв",
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр",
+      },
+
+      policyCheckbox: {
+        required: "Нужно ваше согласие",
+      },
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          call.removeClass("active");
+          modalThx.toggleClass("active");
+        },
+        error: function (response) {
+          console.error("Ошибка запроса" + response);
+        },
+      });
+    },
+  });
+  $(".free__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+      },
+      userPhone: {
+        required: true,
+        minlength: 11,
+      },
+      // compound rule
+
+      policyCheckbox: {
+        required: true,
+      },
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Не короче двух букв",
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр",
+      },
+
+      policyCheckbox: {
+        required: "Нужно ваше согласие",
+      },
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          call.removeClass("active");
+          modalThx.toggleClass("active");
         },
         error: function (response) {
           console.error("Ошибка запроса" + response);

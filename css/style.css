@@ -806,6 +806,66 @@
     -ms-flex-direction: column;
     flex-direction: column; }
 
+.modal-thanks {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 199;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(30, 28, 52, 0.5); }
+  .modal-thanks--active {
+    opacity: 1;
+    visibility: visible; }
+  .modal-thanks__dialog {
+    padding: 20px 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #1e1c34; }
+  .modal-thanks__title {
+    color: #ffd11a;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.98px;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .modal-thanks__close {
+    position: absolute;
+    right: -40px;
+    top: -20px;
+    width: 16px;
+    height: 15px;
+    background: transparent url(../image/close__btn.png) no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+
 .container {
   width: 85%;
   max-width: 1140px;

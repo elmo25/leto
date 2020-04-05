@@ -159,9 +159,13 @@
       <section class="free section">
         <div class="container">
           <h2 class="free__title section__title section__title--dark">Записаться на бесплатный визит</h2>
-          <form action="#" class="form free__form">
-            <input type="text" class="form__input" placeholder="Ваше имя...">
-            <input type="text" class="form__input" placeholder="Ваш номер телефона...">
+          <form action="send.php" method="POST" class="form free__form">
+            <div class="input__group free__input__group">
+              <input type="text" name="userName" class="form__input" placeholder="Ваше имя...">
+              <input type="text" name="usePhone" class="form__input" placeholder="Ваш номер телефона...">
+            </div>
+            <!-- /.input__group free__input__group -->
+            
             <button class="btn--primary free-btn" >записаться</button>
            
           </form>
@@ -348,23 +352,27 @@
                     <span class="label__text">Россия, Москва, 7-я Кожуховская ул., 9</span>
                   </label>
                 </div>
-                <div class="club">
+                <form action="send.php" method="post" class="club form__club">
                   <input type="checkbox" class="club__input" id="card_leto_schelkovo" name="club-name" value="schelkovo">
                   <label for="card_leto_schelkovo" class="club__label label">
                     <strong class="label__title">Лето «Щелково»</strong>
                     <span class="label__text">Россия, г. Щелково, ул. Советская, д. 16</span>
                   </label>
-                </div>
+                </form>
                 <form action="#" class="form cards__form">
-                  <input type="text" class="form__input cards__input" placeholder="Ваше имя*">
-                  <input type="text" class="form__input cards__input" placeholder="Ваш номер телефона*">
+                  <div class="input__group cards__input__group">
+                    <input type="text" name="userName" class="form__input cards__input" placeholder="Ваше имя*">
+                    <input type="text" name="userPhone" class="form__input cards__input" placeholder="Ваш номер телефона*">
+                  </div>
+                  <!-- /.input__group cards__input__grou -->
+                  
                 </form>
                 <div class="policy cards__policy">
                   <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
                     class="cards__policy__checkbox policy__checkbox" />
                   <label for="cards-policy-checkbox" class="cards__label">Я согласен на обработку персональных данных</label>
                 </div>
-                <button class="btn--primary cards__btn--primary">Забронировать карту</button>
+                <button class="btn btn--primary cards__btn--primary">Забронировать карту</button>
                  
               </div>
             </div>
@@ -445,19 +453,20 @@
       <div class="modal-call__dialog">
         <button class="modal-call__close"></button>
         <h2 class="modal-call__title">Обратный звонок</h2>
-        <form action="#" class="form modal-call__form">
+        <form action="send.php" method="POST" class="form modal-call__form">
           <div class="input__group modal-call__input__group">
             <input type="text" name="userName" class="form__input modal-call__input" placeholder="Ваше имя*">
             <input type="text" name="userPhone" class="form__input modal-call__input" placeholder="Ваш номер телефона*">
           </div>
+          <div class="policy modal-call__policy">
+            <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
+              class="modal__policy__checkbox policy__checkbox" />
+            <label for="modal-policy-checkbox" class="modal-call__label">Я согласен на обработку персональных данных</label>
+          </div>
+          <button class="btn--primary  modal-call__btn--primary">перезвоните мне</button>
           
         </form>
-        <div class="policy modal-call__policy">
-          <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
-            class="modal__policy__checkbox policy__checkbox" />
-          <label for="modal-policy-checkbox" class="modal-call__label">Я согласен на обработку персональных данных</label>
-        </div>
-        <button class="btn--primary modal-call__btn--primary">перезвоните мне</button>
+        
       </div>
     </div>
     <!-- /.modal -->
@@ -465,20 +474,33 @@
       <div class="modal-booked__dialog">
         <button class="modal-booked__close"></button>
         <h2 class="modal-booked__title">Записаться на визит</h2>
-        <form action="#" class="form modal-booked__form">
+        <form action="send.php" method="POST" class="form modal-booked__form">
           <div class="input__group modal-booked__input__group">
           <input type="text" name="userName" class="form__input modal-booked__input" placeholder="Ваше имя*">
           <input type="text" name="userPhone" class="form__input modal-booked__input" placeholder="Ваш номер телефона*">
           </div>
-         
-        </form>
-        <div class="policy modal-booked__policy">
-          <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
-            class="modal__policy__checkbox policy__checkbox" />
-          <label for="modal-policy-checkbox" class="modal-booked__label">Я согласен на обработку персональных данных</label>
-        </div>
+          <div class="policy modal-booked__policy">
+            <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
+              class="modal__policy__checkbox policy__checkbox" />
+            <label for="modal-policy-checkbox" class="modal-booked__label">Я согласен на обработку персональных данных</label>
+          </div>
         <button class="btn--primary modal-booked__btn--primary">перезвоните мне</button>
+
+        </form>
+       
+        
       </div>
+      
+    </div>
+    <div class="modal modal-thanks">
+      <div class="modal-thanks__dialog">
+        <button class="modal-thanks__close"></button>
+        <h3 class="modal-thanks__title">
+          Ваша заявка была отправлена, наш менеджер вскоре свяжется с вами.
+        </h3>
+    
+      </div>
+      <!-- /.modal__dialog -->
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
