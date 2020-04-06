@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700,700i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Leto</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="logo header__logo">
+            <img src="image/logo.png" alt="лого" />
+          </div>
+          <div class="header__btn btn--outline">
+            <span class="btn__text">Выбрать клуб</span>
+            <div class="minimenu">
+              <div class="minimenu__group">
+                <a href="#" class="label__title mini__title">Лето «Мозаика»</a>
+                <span class="label__text mini__text">Россия, Москва, 7-я Кожуховская ул., 9</span>
+              </div>
+              <div class="minimenu__group">
+                <a href="#" class="label__title mini__title">Лето «Щелково»</a>
+                <span class="label__text mini__text">Россия, г. Щелково, ул. Советская, д. 16</span>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="header__booked booked" data-toggle="booked">
+            <img class="booked__img" src="image/booked-img.png" alt="" />
+            <span class="booked__text "
+              >Записаться на бесплатный&nbsp;визит</span
+            >
+          </div>
+          <div class="contacts header__contacts">
+            <div class="contacts__info">
+              <div class="info__text">Звоните круглосуточно!</div>
+              <a href="+74952660278" class="info__phone">+7 (495) 266 02 78</a>
+            </div>
+            <button class="btn contacts__btn btn--primary" data-toggle="modal">
+              Перезвоните мне
+            </button>
+          </div>
+        </div>
+        <!--header__content-->
+        <!--container-->
+    </header>
+    
+    <main>
+      <section class="menu">
+        <div class="menutoggle">
+          <img src="image/menu.png" alt="menu" width="32px">
+        </div>
+        <div class="container">
+          <div class="menu__content">
+            <div class="menu__nav nav">
+              <a href="#" class="nav__item">Клубы</a>
+              <a href="#" class="nav__item">Услуги</a>
+              <a href="#" class="nav__item">Клубные карты</a>
+              <a href="#" class="nav__item">Расписания</a>
+              <a href="#" class="nav__item">Наши тренеры</a>
+              <a href="#" class="nav__item">Галерея</a>
+              <a href="#" class="nav__item">Наши акции</a>
+              <a href="#" class="nav__item">Контакты</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--container-->
+      </section>
+      <section class="hero hero__mozaika">
+        <div class="swiper-container mozaika__swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper mozaika__swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide mozaika__swiper-slide ">
+                <img src="image/slide-pic.png" alt="" class="mozaika__slide">
+              </div>
+              <div class="swiper-slide mozaika__swiper-slide">
+                <img src="image/slide-pic.png" alt="" class="mozaika__slide">
+              </div>
+              <div class="swiper-slide mozaika__swiper-slide">
+                <img src="image/slide-pic.png" alt="" class="mozaika__slide">
+              </div>
+              <div class="swiper-slide mozaika__swiper-slide">
+                <img src="image/slide-pic.png" alt="" class="mozaika__slide">
+              </div>
+              <div class="swiper-slide mozaika__swiper-slide">
+                <img src="image/slide-pic.png" alt="" class="mozaika__slide">
+              </div>
+              
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination mozaika__swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+          
+          </div>
+        
+        
+          
+        
+          
+        
+        <!-- /.container -->
+      </section>
+      <div class="breadcrumbs">
+        <div class="container">
+          <a href="index.html" title="Главная">Главная</a>
+          <img class="breadcrumbs__image " src="image/vector-arrow.svg" alt="">
+          <a href="shelkovo.html" title="Главная">Клубы</a>
+          <img class="breadcrumbs__image " src="image/vector-arrow.svg" alt="">
+          <span class="breadcrumbs__text">Лето «Шелково»</span>
+        </div>
+        <!-- /.container -->
+      </div>
+      <section class="schedule">
+        <div class="container">
+          <div class="row schedule__row col-100%">
+            <div class=" schedule__left">
+              <img src="image/clubs-left__bg.png" alt="" class="scheduale__image">
+            </div>
+            <!-- /.col-50 -->
+            <div class=" schedule__right">
+              <ul class="schedule__list">
+                <li class="list__content content">
+                  <img src="image/clubs__icon.png" alt="" class="content__image">
+                  <div class="content__info">
+                    <span class="content__title">«Лето» в ТРЦ «Мозаика»</span>
+                    <span class="content__text">Россия, Москва, 7-я Кожуховская ул., 9</span>
+                  </div>
+          
+                </li>
+                <li class="list__content content">
+                  <img src="image/clock__icon.png" alt="" class="content__image">
+                  <div class="content__info">
+                    <span class="content__title">Часы работы:</span>
+                    <span class="content__text">ПН-ВС: круглосуточно</span>
+                  </div>
+                </li>
+                <li class="list__content content">
+                  <img src="image/phone__icon.png" alt="" class="content__image">
+                  <div class="content__info">
+                    <span class="content__title">Единый телефон:</span>
+                    <span class="content__text">+ 7 (495) 266-02-48</span>
+                  </div>
+                </li>
+                <li class="list__content content">
+                  <img src="image/mail__icon.png" alt="" class="content__image">
+                  <div class="content__info">
+                    <span class="content__title">E-mail:</span>
+                    <span class="content__text">sell@letofit.ru</span>
+                  </div>
+                </li>
+              </ul>
+              <button class="btn--primary schedule__btn btn">Расписание клуба</button>
+            </div>
+            <!-- /.col-50 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <section class="about">
+       <div class="container">
+          <div class="about__wrap">
+            <div class="about__item">
+              <img src="image/about-1.png" alt="" class="item__image">
+              <span class="item__line"></span>
+              <span class="item__text">Общая площадь<span>
+              <span class="item__text">1500 м<sup>2</sup></span>
+            </div>
+            <div class="about__item">
+              <img src="image/about-2.png" alt="" class="item__image">
+              <span class="item__line"></span>
+              <span class="item__text">Тренажерный зал<span>
+              <span class="item__text">1000 <sup>2</sup></span>
+            </div>
+            <div class="about__item">
+              <img src="image/about-3.png" alt="" class="item__image">
+              <span class="item__line"></span>
+              <span class="item__text">Груп. программы<span>
+              <span class="item__text">(2 зала)</span>
+            </div>
+            <div class="about__item ">
+              <img src="image/about-4.png" alt="" class="item__image">
+              <span class="item__line"></span>
+              <span class="item__text item__text--oneline">СПА Зона<span>
+              
+            </div>
+            <div class="about__item">
+              <img src="image/about-5.png" alt="" class="item__image">
+              <span class="item__line"></span>
+              <span class="item__text item__text--oneline">Кроссфит<span>
+              
+            </div>
+            <div class="about__item">
+              <img src="image/about-6.png" alt="" class="item__image">
+              <span class="item__line"></span>
+              <span class="item__text item__text--oneline">Фитнес бар<span>
+              
+            </div>
+            <div class="about__item">
+              <img src="image/about7.png" alt="" class="item__image">
+              <span class="item__line"></span>
+              <span class="item__text">Масажный<span>
+              <span class="item__text">кабинет</span>
+            </div>
+          </div>
+       </div>
+       <!-- /.container -->
+      </section>
+      <!-- /.about -->
+      <section class="section mozaika-cards">
+        <div class="container">
+          <h2 class="section__title">Выбрать карту</h2>
+          <div class="row mozaika-cards__row">
+            <div class="col-50 mozaika-cards__left">
+              <div class="items">
+                <img src="image/mozailka-card.png" alt="" class="items__image">
+      
+              </div>
+            </div>
+            <div class="col-50  mozaika-cards__right">
+              <form action="" class="mozaika-cards__form">
+                <div class="radio">
+                  <div class="radio__group">
+                    <input type="radio" name="" id="" class="radio__input">
+                    <label for="" class="radio__label">
+                      <span class="label__text">1 месяц</span>
+                      <span class="label__text">- соло -</span>
+                      <span class="label__text">2999i</span>
+                      <span class="label__text">* Без заморозки</span>
+                    </label>
+                  </div>
+                 <div class="radio__group">
+                  <input type="radio" name="" id="" class="radio__input">
+                  <label for="" class="radio__label">
+                    <span class="label__text">6 месяцев</span>
+                    <span class="label__text">соло</span>
+                    <span class="label__text">9900i</span>
+                    <span class="label__text">* Без заморозки</span>
+                  </label>
+                 </div>
+                  <div class="radio__group">
+                    <input type="radio" name="" id="" class="radio__input">
+                    <label for="" class="radio__label">
+                      <span class="label__text">9 месяцев</span>
+                      <span class="label__text">соло</span>
+                      <span class="label__text">11900i</span>
+                      <span class="label__text">* Без заморозки</span>
+                    </label>
+                  </div>
+                  <div class="radio__group">
+                    <input type="radio" name="" id="" class="radio__input">
+                    <label for="" class="radio__label">
+                      <span class="label__text">12 месяцев</span>
+                      <span class="label__text">дневная</span>
+                      <span class="label__text">9900i</span>
+                      <span class="label__text">* 1 месяц заморозки</span>
+                    </label>
+                  </div>
+                  
+                  <input type="radio" name="" id="" class="radio__input">
+                  <label for="" class="radio__label">
+                    <span class="label__text">12 месяцев</span>
+                    <span class="label__text">соло</span>
+                    <span class="label__text">15900i</span>
+                    <span class="label__text">* 1 месяц заморозки</span>
+                  </label>
+                </div>
+                <!--radio-->
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </section>
+      <section class="free section">
+        <div class="container">
+          <h2 class="free__title section__title section__title--dark">Записаться на бесплатный визит</h2>
+          <form action="send.php" method="POST" class="form free__form">
+            <div class="input__group free__input__group">
+              <input type="text" name="userName" class="form__input" placeholder="Ваше имя...">
+              <input type="text" name="usePhone" class="form__input" placeholder="Ваш номер телефона...">
+            </div>
+            <!-- /.input__group free__input__group -->
+            
+            <button class="btn--primary free-btn" >записаться</button>
+           
+          </form>
+          <div class="policy free__policy">
+            <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox" class="free__policy__checkbox policy__checkbox" />
+            <label for="free-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+          </div>
+        </div>
+        <!-- /.container -->
+        
+      </section>
+      <section class="services section">
+        <div class="container">
+          <h2 class="section__title">услуги наших клубов</h2>
+          <div class="swiper-container services__swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/service-slider1.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Аква территория
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/slide__2.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle ">Зона&nbsp;свободных&nbsp;весов
+                  </strogn>
+                  <div class="discription__text">
+                    Здесь есть всё необходимое, чтобы достичь максимальных результатов
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/slide__3.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Зона TRX
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/slide__5.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Кардио зона
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/slide__6.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Йога
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/service-slider1.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Аква территория
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/service-slider1.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Аква территория
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/service-slider1.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Аква территория
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/service-slider1.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Аква территория
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide services__swiper-slide">
+                <img src="image/service-slider1.png" class="service__image" alt="">
+                <div class="service__discription discription">
+                  <strogn class="discription__subtitle">Аква территория
+                  </strogn>
+                  <div class="discription__text">
+                    Плавание полезно для людей абсолютно любой возрастной категории. Бассейн 5 на 6 метров.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            
+          </div>
+          <div class="slider__buttons">
+            <div class="swiper-button-prev-2"></div>
+            <div class="swiper-button-next-2"></div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </section>
+      <section class="section gallery">
+        <div class="container">
+          <h2 class="section__title">Фотогалерея</h2>
+          <div class="swiper-container gallery__swiper-container">
+            <div class="swiper-wrapper gallery__swiper-wrapper">
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="gallery__swiper-button-next"></div>
+            <div class="gallery__swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination gallery__swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section gallery -->
+      
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap section">
+          <div class="footer__logo">
+            <img src="image/logo.png" alt="">
+          </div>
+          <div class="footer__list list">
+            <div class="list__title">«Лето»</div>
+            <a href="#" class="list__item">Клубы</a>
+            <a href="#" class="list__item">Новости</a>
+            <a href="#" class="list__item">Акции</a>
+            <a href="#" class="list__item">Фотогалерея</a>
+            <a href="#" class="list__item">Наши контакты</a>
+          </div>
+          <div class="footer__list list">
+            <div class="list__title">Клиентам</div>
+            <a href="#" class="list__item">Клубные карты</a>
+            <a href="#" class="list__item">Расписание</a>
+            <a href="#" class="list__item">Услуги</a>
+            <a href="#" class="list__item">Тренеры</a>
+            
+          </div>
+          <div class="footer__clubs">
+            <div class="clubs__tag">
+              Выбрать клуб
+            </div>
+            <div class="club">
+              <input type="checkbox" class="club__input" id="card_leto_mozaika" name="club-name" value="mozaika" checked>
+              <label for="card_leto_mozaika" class="club__label label footer__label">
+                <strong class="label__title footer__label__title">Лето «Мозаика»</strong>
+                <span class="label__text footer__label__text">Россия, Москва, 7-я Кожуховская ул., 9</span>
+              </label>
+            </div>
+            <div class="club footer__club">
+              <input type="checkbox" class="club__input" id="card_leto_schelkovo" name="club-name" value="schelkovo">
+              <label for="card_leto_schelkovo" class="club__label label footer__label">
+                <strong class="label__title footer__label__title">Лето «Щелково»</strong>
+                <span class="label__text footer__label__text">Россия, г. Щелково, ул. Советская, д. 16</span>
+              </label>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <div class="contacts__text">
+              <span class="footer__info">Единый телефон</span>
+              <a href="74952660278" class="footer__phone">+7 (495) 266 02 78</a>
+            </div>
+            <button class="btn contacts__btn btn--primary" data-toggle="modal">
+              Перезвоните мне
+            </button>
+          </div>
+        </div>
+        <div class="footer__bootom">
+          <div class="footer__line line"></div>
+          <div class="footer__social">
+            <div class="social__text">© Фитнес-центр «Лето», 2017. Все права защищены.</div>
+            <div class="social__icons">
+              <a href="#" class="icons__item"><img src="image/vk.png" alt=""></a>
+              <a href="#" class="icons__item"><img src="image/inst.png" alt=""></a>
+              <a href="#" class="icons__item"><img src="image/utube.png" alt=""></a>
+              <a href="#" class="icons__item"><img src="image/facebook.png" alt=""></a>
+              <a href="#" class="icons__item"><img src="image/twitter.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    
+      
+    </footer>
+    <div class="modal modal-call">
+      <div class="modal-call__dialog">
+        <button class="modal-call__close"></button>
+        <h2 class="modal-call__title">Обратный звонок</h2>
+        <form action="send.php" method="POST" class="form modal-call__form">
+          <div class="input__group modal-call__input__group">
+            <input type="text" name="userName" class="form__input modal-call__input" placeholder="Ваше имя*">
+            <input type="text" name="userPhone" class="form__input modal-call__input" placeholder="Ваш номер телефона*">
+          </div>
+          <div class="policy modal-call__policy">
+            <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
+              class="modal__policy__checkbox policy__checkbox" />
+            <label for="modal-policy-checkbox" class="modal-call__label">Я согласен на обработку персональных данных</label>
+          </div>
+          <button class="btn--primary  modal-call__btn--primary">перезвоните мне</button>
+          
+        </form>
+        
+      </div>
+    </div>
+    <!-- /.modal -->
+    <div class="modal modal-booked">
+      <div class="modal-booked__dialog">
+        <button class="modal-booked__close"></button>
+        <h2 class="modal-booked__title">Записаться на визит</h2>
+        <form action="send.php" method="POST" class="form modal-booked__form">
+          <div class="input__group modal-booked__input__group">
+          <input type="text" name="userName" class="form__input modal-booked__input" placeholder="Ваше имя*">
+          <input type="text" name="userPhone" class="form__input modal-booked__input" placeholder="Ваш номер телефона*">
+          </div>
+          <div class="policy modal-booked__policy">
+            <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox"
+              class="modal__policy__checkbox policy__checkbox" />
+            <label for="modal-policy-checkbox" class="modal-booked__label">Я согласен на обработку персональных данных</label>
+          </div>
+        <button class="btn--primary modal-booked__btn--primary">перезвоните мне</button>
+
+        </form>
+       
+        
+      </div>
+      
+    </div>
+    <div class="modal modal-thanks">
+      <div class="modal-thanks__dialog">
+        <button class="modal-thanks__close"></button>
+        <h3 class="modal-thanks__title">
+          Ваша заявка была отправлена, наш менеджер вскоре свяжется с вами.
+        </h3>
+    
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -78,6 +78,28 @@ $(document).ready(function () {
       el: ".swiper-scrollbar",
     },
   });
+  var mySwiper = new Swiper(".mozaika__swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".mozaika__swiper-pagination",
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".mozaika__swiper-button-next",
+      prevEl: ".mozaika__swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
   var swiper = new Swiper(".services__swiper-container", {
     direction: "horizontal",
     loop: true,
