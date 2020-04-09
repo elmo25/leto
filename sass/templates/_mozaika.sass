@@ -1,14 +1,3 @@
-.mozaika
-  &-cards
-    &__row
-      display: flex
-      justify-content: center
-      align-items: center
-      flex-wrap: wrap
-    &__left
-      margin-right: 39px
-  &__slide
-    width: 100%
 .breadcrumbs
   border-bottom: 1px solid #e1dfe2
   padding: 25px 0
@@ -74,7 +63,6 @@
     justify-content: center
     align-items: center
     margin-left: 70px
-    
   &__item
     width: 146px
     margin-right: 21px
@@ -135,8 +123,9 @@
     line-height: 17px
 .radio
   display: flex
-  justify-content: space-between
   align-items: center
+  
+  margin-bottom: 27px
   &__group
     padding: 
     border: 1px solid #b7b7b7
@@ -159,26 +148,67 @@
     align-items: center
     flex-direction: column
     text-align: center
-   
-.label
-  &:hover
-    opacity: 1
-  &__text
-    color: #1e1c34
-    font-family: Roboto
-    font-size: 12px
-    font-weight: 400
-    line-height: 22.04px
-    text-transform: uppercase
-
-    &:nth-child(3)
+.radio
+  &-label
+    &:hover
+      opacity: 1
+    &__text
       color: #1e1c34
       font-family: Roboto
-      font-size: 16px
-      font-weight: 400
-      line-height: 22.04px
-    &:nth-child(4)
       font-size: 12px
       font-weight: 400
       line-height: 22.04px
+      text-transform: uppercase
+
+      &:nth-child(3)
+        color: #1e1c34
+        font-family: Roboto
+        font-size: 16px
+        font-weight: 400
+        line-height: 22.04px
+      &:nth-child(4)
+        font-size: 12px
+        font-weight: 400
+        line-height: 22.04px
+.mozaika
+  &-card
+    &__row
+      display: flex
+      justify-content: space-between
+    &__left
+      width: 30%
+      margin-right: 39px
+    &__right
+      display: flex
+      flex-direction: column
+      width: 70%
+  &__form
+    display: flex
+    flex-direction: column
+  &__input
+    width: 740px
+    padding-top: 18px
+    padding-bottom: 18px
+    padding-left: 25px
+    margin-bottom: 12px
+    border: 1px solid #b7b7b7
+    border-radius: 40px
+    &__group
+    &::placeholder
+      font-size: 1rem
+      line-height: 24px
+.policy-group
+  align-self: flex-start
+  margin-left: 20px
+  margin-top: 39px
+.form
+  &__btn
+    align-self: flex-end
+    margin-top: -39px
+    margin-right: 25px
+  
     
+      
+      
+  
+     

@@ -218,91 +218,111 @@
        <!-- /.container -->
       </section>
       <!-- /.about -->
-      <section class="section mozaika-cards">
+      <section class="section mozaika-card">
         <div class="container">
           <h2 class="section__title">Выбрать карту</h2>
-          <div class="row mozaika-cards__row">
-            <div class="col-50 mozaika-cards__left">
-              <div class="items">
-                <img src="image/mozailka-card.png" alt="" class="items__image">
-      
-              </div>
+          <div class="mozaika-card__row col-100">
+            <div class="mozaika-card__left">
+              <img src="image/mozailka-card.png" alt="" class="left__img">
             </div>
-            <div class="col-50  mozaika-cards__right">
-              <form action="" class="mozaika-cards__form">
+            <!-- /.mozaika-card__left -->
+            <div class="mozaika-card__right">
               <div class="radio">
                 <div class="radio__group">
                   <input type="radio" name="cardType" class="radio__input">
                   <label for="" class="radio__label">
-                    <span class="label__text">1 месяц</span>
-                    <span class="label__text">соло</span>
-                    <span class="label__text">2999₽</span>
-                    <span class="label__text">*&nbsp;Без&nbsp;заморозки</span>
+                    <span class="radio-label__text">1 месяц</span>
+                    <span class="radio-label__text">соло</span>
+                    <span class="radio-label__text">2999₽</span>
+                    <span class="radio-label__text">*&nbsp;Без&nbsp;заморозки</span>
                   </label>
                 </div>
                 <div class="radio__group">
                   <input type="radio" name="cardType" class="radio__input">
                   <label for="" class="radio__label">
-                    <span class="label__text">6 месяцев</span>
-                    <span class="label__text">соло</span>
-                    <span class="label__text">9900₽</span>
-                    <span class="label__text">*&nbsp;Без&nbsp;заморозки</span>
+                    <span class="radio-label__text">6 месяцев</span>
+                    <span class="radio-label__text">соло</span>
+                    <span class="radio-label__text">9900₽</span>
+                    <span class="radio-label__text">*&nbsp;Без&nbsp;заморозки</span>
                   </label>
                 </div>
                 <div class="radio__group">
                   <input type="radio" name="cardType" class="radio__input">
                   <label for="" class="radio__label">
-                    <span class="label__text">9 месяцев</span>
-                    <span class="label__text">соло</span>
-                    <span class="label__text">11900₽</span>
-                    <span class="label__text">*&nbsp;Без&nbsp;заморозки</span>
+                    <span class="radio-label__text">9 месяцев</span>
+                    <span class="radio-label__text">соло</span>
+                    <span class="radio-label__text">11900₽</span>
+                    <span class="radio-label__text">*&nbsp;Без&nbsp;заморозки</span>
                   </label>
                 </div>
                 <div class="radio__group">
                   <input type="radio" name="cardType" class="radio__input">
                   <label for="" class="radio__label">
-                    <span class="label__text">12 месяцев</span>
-                    <span class="label__text">дневная</span>
-                    <span class="label__text">9900₽</span>
-                    <span class="label__text">*&nbsp;1&nbsp;месяц&nbsp;заморозки</span>
+                    <span class="radio-label__text">12 месяцев</span>
+                    <span class="radio-label__text">дневная</span>
+                    <span class="radio-label__text">9900₽</span>
+                    <span class="radio-label__text">*&nbsp;1&nbsp;месяц&nbsp;заморозки</span>
                   </label>
                 </div>
                 <div class="radio__group">
                   <input type="radio" name="cardType" class="radio__input">
                   <label for="" class="radio__label">
-                    <span class="label__text">12 месяцев</span>
-                    <span class="label__text">соло</span>
-                    <span class="label__text">15900₽</span>
-                    <span class="label__text">*&nbsp;1&nbsp;месяц&nbsp;заморозки</span>
+                    <span class="radio-label__text">12 месяцев</span>
+                    <span class="radio-label__text">соло</span>
+                    <span class="radio-label__text">15900₽</span>
+                    <span class="radio-label__text">*&nbsp;1&nbsp;месяц&nbsp;заморозки</span>
                   </label>
                 </div>
               </div>
+              <form action="" class="mozaika__form form">
+                <div class="mozaika__input-group">
+                  <input type="text" class="mozaika__input" placeholder="Ваше имя*">
+                  <input type="text" class="mozaika__input" placeholder="Ваш номер телефона*">
+                </div>
+                <div class="policy-group">
+                  
+                    <input class="policy-group__input" type="checkbox" name="" id="">
+                    <label for="" class="policy-group__label">
+                      Я согласен на обработку персональных данных
+                    </label> <!-- /.policy__label -->
+                  
+                </div>
+                <button class="btn--primary form__btn ">Забронировать карту</button>
               </form>
             </div>
           </div>
         </div>
         <!-- /.container -->
       </section>
-      <section class="free section">
+      <section class="section gallery">
         <div class="container">
-          <h2 class="free__title section__title section__title--dark">Записаться на бесплатный визит</h2>
-          <form action="send.php" method="POST" class="form free__form">
-            <div class="input__group free__input__group">
-              <input type="text" name="userName" class="form__input" placeholder="Ваше имя...">
-              <input type="text" name="usePhone" class="form__input" placeholder="Ваш номер телефона...">
+          <h2 class="section__title">Фотогалерея</h2>
+          <div class="swiper-container gallery__swiper-container">
+            <div class="swiper-wrapper gallery__swiper-wrapper">
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
+              <div class="swiper-slide gallery__swiper-slide">
+                <img src="image/gallery__slide.png" alt="" class="gallery__image">
+              </div>
             </div>
-            <!-- /.input__group free__input__group -->
-            
-            <button class="btn--primary free-btn" >записаться</button>
-           
-          </form>
-          <div class="policy free__policy">
-            <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox" class="free__policy__checkbox policy__checkbox" />
-            <label for="free-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+            <!-- Add Arrows -->
+            <div class="gallery__swiper-button-next"></div>
+            <div class="gallery__swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination gallery__swiper-pagination"></div>
           </div>
         </div>
         <!-- /.container -->
-        
       </section>
       <section class="services section">
         <div class="container">
@@ -411,7 +431,7 @@
               </div>
             </div>
             <!-- Add Pagination -->
-            
+      
           </div>
           <div class="slider__buttons">
             <div class="swiper-button-prev-2"></div>
@@ -420,37 +440,33 @@
         </div>
         <!-- /.container -->
       </section>
-      <section class="section gallery">
+      <!-- /.section gallery -->
+      <section class="free section">
         <div class="container">
-          <h2 class="section__title">Фотогалерея</h2>
-          <div class="swiper-container gallery__swiper-container">
-            <div class="swiper-wrapper gallery__swiper-wrapper">
-              <div class="swiper-slide gallery__swiper-slide">
-                <img src="image/gallery__slide.png" alt="" class="gallery__image">
-              </div>
-              <div class="swiper-slide gallery__swiper-slide">
-                <img src="image/gallery__slide.png" alt="" class="gallery__image">
-              </div>
-              <div class="swiper-slide gallery__swiper-slide">
-                <img src="image/gallery__slide.png" alt="" class="gallery__image">
-              </div>
-              <div class="swiper-slide gallery__swiper-slide">
-                <img src="image/gallery__slide.png" alt="" class="gallery__image">
-              </div>
-              <div class="swiper-slide gallery__swiper-slide">
-                <img src="image/gallery__slide.png" alt="" class="gallery__image">
-              </div>
+          <h2 class="free__title section__title section__title--dark">Записаться на бесплатный визит</h2>
+          <form action="send.php" method="POST" class="form free__form">
+            <div class=" free__input__group">
+              <input type="text" name="userName" class="form__input" placeholder="Ваше имя...">
+              <input type="text" name="usePhone" class="form__input" placeholder="Ваш номер телефона...">
             </div>
-            <!-- Add Arrows -->
-            <div class="gallery__swiper-button-next"></div>
-            <div class="gallery__swiper-button-prev"></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination gallery__swiper-pagination"></div>
+            <!-- /.input__group free__input__group -->
+            
+            <button class="btn--primary free-btn" >записаться</button>
+           
+          </form>
+          <div class="policy free__policy">
+            <input type="checkbox" name="policyCheckbox" id="free-policy-checkbox" class="free__policy__checkbox policy__checkbox" />
+            <label for="free-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
           </div>
         </div>
         <!-- /.container -->
+        
       </section>
-      <!-- /.section gallery -->
+      
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea3e44d61a8c77cbf65670027b88eb11eb5f50816e3e03bcbb38bc40c7b35ded&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
       
     </main>
     <footer class="footer">
