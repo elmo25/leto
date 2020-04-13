@@ -13,6 +13,7 @@ $(document).ready(function () {
   const bookedDialog = $(".modal-booked__dialog");
   const modalThx = $(".modal-thanks");
   const closeThx = $(".modal-thanks__close");
+  const button = $(".go-top");
 
   btn.on("click", function () {
     mini.toggleClass("active");
@@ -55,6 +56,17 @@ $(document).ready(function () {
     if (!bookedDialog.is(e.target) && bookedDialog.has(e.target).length === 0) {
       booked.toggleClass("active");
     }
+  });
+  $(window).on("scroll", (e) => {
+    if ($(this).scrollTop() >= 50) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+  });
+  button.on("click", (e) => {
+    e.preventDefault();
+    $("html").animate({ scrollTop: 0 }, 1000);
   });
   var mySwiper = new Swiper(".hero__swiper-container", {
     // Optional parameters
